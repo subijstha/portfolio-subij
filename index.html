@@ -109,7 +109,7 @@
                                 environments. A personable team player with talent for collaborating with elite
                                 technical and cross-functional teams to
                                 achieve outstanding results. </p>
-                            <a class="btn" href="#contact">Hire Me</a>
+
                         </div>
                     </div>
                     <div class="row">
@@ -215,7 +215,9 @@
                                 <h3>Bitmaps IT Solution Pvt Ltd.</h3>
                                 <h4>Chitwan, Nepal</h4>
                                 <h5>Junior Software Developer</h5>
-                                <p>Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.</p>
+                                <p>BITS is a creatively driven integrated Business Consulting, Advertising agency and IT
+                                    company located in Narayangarh that creates high-impact business solutions for both
+                                    traditional and digital media to its clients.</p>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -224,7 +226,7 @@
                                 <h3>Bitmaps IT Solution Pvt Ltd.</h3>
                                 <h4>Chitwan, Nepal</h4>
                                 <h5>Intern <i>(Web developer)</i></h5>
-                                <p>Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.</p>
+                                <p></p>
                             </div>
                         </div>
 
@@ -442,31 +444,12 @@
 
     <!-- Template Javascript -->
 
-    <script>
-        $(document).ready(function () {
-            $('#contactForm').on('submit', function (event) {
-                event.preventDefault();
 
-                // Your AJAX request to handle form submission
-                $.ajax({
-                    type: 'POST',
-                    url: '/sendEmail', // Update this to your server-side endpoint
-                    data: $(this).serialize(),
-                    success: function (response) {
-                        if (response.status === 'success') {
-                            alert('Message sent successfully!');
-                        } else {
-                            console.error('Error sending message:', response.message);
-                        }
-                    },
-                    error: function (error) {
-                        console.error('Error sending message:', error);
-                    }
-                });
-            });
-        });
-    </script>
     <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 
